@@ -1,4 +1,4 @@
-@import "./Sass/Variables.scss";
+@import "./Sass/variables.scss";
 
 /***************************************************
 	Colors Set In This File For Two Reasons
@@ -6,7 +6,7 @@
 		2 - [ To Avoid Repeat Code In Diffrent Sass Files When Import Colors Sass File ]
 ***************************************************/
 
-// Start Main Colors Using Css Variables In Light Theme
+// Start Main Colors Using Css variables In Light Theme
 
 :root {
   --main-color: #47aee1;
@@ -23,8 +23,8 @@
   --box-shadow-white-color: rgba(255, 255, 255, 0.3);
 }
 
-// End Main Colors Using Css Variables In Light Theme
-// Start Main Colors Using Css Variables In Dark Theme
+// End Main Colors Using Css variables In Light Theme
+// Start Main Colors Using Css variables In Dark Theme
 
 .dark-theme {
   --main-color: #3b92bd;
@@ -41,7 +41,7 @@
   --box-shadow-white-color: rgba(0, 0, 0, 0.3);
 }
 
-// End Main Colors Using Css Variables In Dark Theme
+// End Main Colors Using Css variables In Dark Theme
 
 *,
 *::before,

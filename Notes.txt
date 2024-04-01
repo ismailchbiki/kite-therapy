@@ -123,9 +123,9 @@
 ---- [ Done ] Shadow Color [ Problem With Sass Should Use Sass Variable ]
 ---- [ Done ] Some Ui Changes
 ---- [ Done ] Accessiblity ( 97% )
----- [ Done ] Change Sass Variables Syntax
----- [ Done ] Split Variables Sass File In Small Files
----- [ Done ] Cut Css Colors Variables To Index.scss To Avoid Repeat Code In Diffrent Sass Files When Import Colors Sass File
+---- [ Done ] Change Sass variables Syntax
+---- [ Done ] Split variables Sass File In Small Files
+---- [ Done ] Cut Css Colors variables To Index.scss To Avoid Repeat Code In Diffrent Sass Files When Import Colors Sass File
 ---- [ Done ] Create useDebounce Custome Hook
 ---- [ DOne ] Create useThrottle Custome Hook
 ---- [ Done ] Change Upper Background Color Variable Sass Syntax
