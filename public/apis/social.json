@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "link": "https://www.instagram.com/ismail_chbiki/",
+    "icon": "fab fa-instagram",
+    "name": "Instagram"
+  },
+  {
+    "id": 2,
+    "link": "https://www.facebook.com/chbiki.ismail/",
+    "icon": "fab fa-facebook-square",
+    "name": "Facebook"
+  },
+  {
+    "id": 3,
+    "link": "https://twitter.com/Ismailchbiki",
+    "icon": "fab fa-twitter",
+    "name": "Twitter"
+  }
+]
