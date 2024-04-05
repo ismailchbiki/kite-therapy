@@ -1,5 +1,5 @@
 // import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Import Custome Hooks
 import { DarkThemeProvider } from "./CustomeHooks/useDarkTheme/useDarkTheme";
@@ -8,6 +8,8 @@ import { DarkThemeProvider } from "./CustomeHooks/useDarkTheme/useDarkTheme";
 import Navbar from "./Components/Navbar/Index";
 import Index from "./Components/Index/Index";
 import Services from "./Components/Services/Index";
+import Products from "./Components/Products/ProductsPage";
+import SingleProduct from "./Components/Products/SingleProductPage";
 import Portfolio from "./Components/Portfolio/Index";
 import Team from "./Components/Team/Index";
 import Contact from "./Components/Contact/Index";
@@ -24,23 +26,33 @@ function App() {
         <Navbar />
         <Buttons />
 
-        <Switch>
-          <Route exact path={`${process.env.PUBLIC_URL}/`} component={Index} />
+        <Routes>
+          <Route path={`${process.env.PUBLIC_URL}/`} element={<Index />} />
+          <Route
+            path={`${process.env.PUBLIC_URL}/products`}
+            element={<Products />}
+          />
+
+          <Route
+            path={process.env.PUBLIC_URL + "/products/:id"}
+            element={<SingleProduct />}
+          />
+
           <Route
             path={`${process.env.PUBLIC_URL}/services`}
-            component={Services}
+            element={<Services />}
           />
           <Route
             path={`${process.env.PUBLIC_URL}/portfolio`}
-            component={Portfolio}
+            element={<Portfolio />}
           />
-          <Route path={`${process.env.PUBLIC_URL}/team`} component={Team} />
+          <Route path={`${process.env.PUBLIC_URL}/team`} element={<Team />} />
           <Route
             path={`${process.env.PUBLIC_URL}/contact`}
-            component={Contact}
+            element={<Contact />}
           />
-          <Route path="*" component={NotFound} />
-        </Switch>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </Router>
     </DarkThemeProvider>
   );

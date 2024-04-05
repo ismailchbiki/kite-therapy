@@ -1,0 +1,22 @@
+.page {
+  min-height: calc(100vh - (20vh + 10rem));
+  margin-top: 8%;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.products {
+  display: grid;
+  gap: 3rem 1.5rem;
+  margin: 4rem auto;
+}
+
+@media (min-width: 768px) {
+  .products {
+    grid-template-columns: 200px 1fr;
+  }
+}
