@@ -7,21 +7,26 @@
     },
     {
       "id": 2,
+      "link": "/products",
+      "text": "Products"
+    },
+    {
+      "id": 3,
       "link": "/services",
       "text": "Services"
     },
     {
-      "id": 3,
+      "id": 4,
       "link": "/portfolio",
       "text": "Portfolio"
     },
     {
-      "id": 4,
+      "id": 5,
       "link": "/team",
       "text": "Team"
     },
     {
-      "id": 5,
+      "id": 6,
       "link": "/contact",
       "text": "Contact"
     }
