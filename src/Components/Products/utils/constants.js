@@ -39,10 +39,8 @@ export const services = [
   },
 ];
 
-// export const products_url = "https://course-api.com/react-store-products";
-
 export const products_url =
   "https://raw.githubusercontent.com/ismailchbiki/data/main/products.json";
 
-export const single_product_url = `https://course-api.com/react-store-single-product?id=`;
-// export const single_product_url = `https://raw.githubusercontent.com/ismailchbiki/data/main/products_info.json?id=`;
+// export const single_product_url = `https://raw.githubusercontent.com/ismailchbiki/data/main/products_info.json?id=`; // this is for server-side filtering
+export const single_product_url = `https://raw.githubusercontent.com/ismailchbiki/data/main/products_info.json`;

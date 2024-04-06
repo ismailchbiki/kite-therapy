@@ -47,16 +47,37 @@ export const ProductsProvider = ({ children }) => {
     }
   };
 
-  const fetchSingleProduct = async (url) => {
+  /* --- This method will be handy when there is server-side filtering --- */
+  // const fetchSingleProduct = async (url) => {
+  //   dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
+  //   try {
+  //     const response = await axios.get(url);
+  //     const singleProduct = response.data;
+  //     dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
+  //   } catch (error) {
+  //     dispatch({ type: GET_SINGLE_PRODUCT_ERROR });
+  //   }
+  // };
+
+  /* --- For now we will use this method for client-side filtering --- */
+  const fetchSingleProduct = async (url, id) => {
     dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
     try {
       const response = await axios.get(url);
-      const singleProduct = response.data;
-      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
+      const allProducts = response.data;
+
+      const singleProduct = allProducts.find((product) => product.id === id);
+
+      if (singleProduct) {
+        dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
+      } else {
+        dispatch({ type: GET_SINGLE_PRODUCT_ERROR });
+      }
     } catch (error) {
       dispatch({ type: GET_SINGLE_PRODUCT_ERROR });
     }
   };
+
   useEffect(() => {
     fetchProducts(url);
   }, []);

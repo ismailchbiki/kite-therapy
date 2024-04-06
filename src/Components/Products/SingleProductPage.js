@@ -17,15 +17,16 @@ const SingleProductPage = () => {
     fetchSingleProduct,
   } = useProductsContext();
 
+  // Get rid of second id parameter when there is server-side filtering
   useEffect(() => {
-    fetchSingleProduct(`${url}${id}`);
+    fetchSingleProduct(`${url}`, `${id}`);
     // eslint-disable-next-line
   }, [id]);
 
   useEffect(() => {
     if (error) {
       setTimeout(() => {
-        navigate("/");
+        navigate(process.env.PUBLIC_URL + "/");
       }, 3000);
     }
     // eslint-disable-next-line
