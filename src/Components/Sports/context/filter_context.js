@@ -1,20 +1,20 @@
 import React, { useEffect, useContext, useReducer } from "react";
 import reducer from "../reducers/filter_reducer";
 import {
-  LOAD_PRODUCTS,
+  LOAD_SPORTS,
   SET_GRIDVIEW,
   SET_LISTVIEW,
   UPDATE_SORT,
-  SORT_PRODUCTS,
+  SORT_SPORTS,
   UPDATE_FILTERS,
-  FILTER_PRODUCTS,
+  FILTER_SPORTS,
   CLEAR_FILTERS,
 } from "../actions";
-import { useProductsContext } from "./products_context";
+import { useSportsContext } from "./sports_context";
 
 const initialState = {
-  filtered_products: [],
-  all_products: [],
+  filtered_sports: [],
+  all_sports: [],
   grid_view: true,
   sort: "price-lowest",
   filters: {
@@ -32,17 +32,17 @@ const initialState = {
 const FilterContext = React.createContext();
 
 export const FilterProvider = ({ children }) => {
-  const { products } = useProductsContext();
+  const { sports } = useSportsContext();
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    dispatch({ type: LOAD_PRODUCTS, payload: products });
-  }, [products]);
+    dispatch({ type: LOAD_SPORTS, payload: sports });
+  }, [sports]);
 
   useEffect(() => {
-    dispatch({ type: FILTER_PRODUCTS });
-    dispatch({ type: SORT_PRODUCTS });
-  }, [products, state.sort, state.filters]);
+    dispatch({ type: FILTER_SPORTS });
+    dispatch({ type: SORT_SPORTS });
+  }, [sports, state.sort, state.filters]);
 
   const setGridView = () => {
     dispatch({ type: SET_GRIDVIEW });

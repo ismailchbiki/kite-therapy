@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Product from "./Product";
+import Sport from "./Sport";
 
-const GridView = ({ products }) => {
+const GridView = ({ sports }) => {
   return (
     <Wrapper>
-      <div className="products-container">
-        {products.map((product) => {
-          return <Product key={product.id} {...product} />;
+      <div className="sports-container">
+        {sports.map((sport) => {
+          return <Sport key={sport.id} {...sport} />;
         })}
       </div>
     </Wrapper>
@@ -19,18 +19,18 @@ const Wrapper = styled.section`
     height: 175px;
   }
 
-  .products-container {
+  .sports-container {
     display: grid;
     gap: 2rem 1.5rem;
   }
 
   @media (min-width: 992px) {
-    .products-container {
+    .sports-container {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   @media (min-width: 1170px) {
-    .products-container {
+    .sports-container {
       grid-template-columns: repeat(3, 1fr);
     }
   }

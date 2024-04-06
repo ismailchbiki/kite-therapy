@@ -1,25 +1,25 @@
 import { useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useProductsContext } from "./context/products_context";
-import { single_product_url as url } from "./utils/constants";
+import { useSportsContext } from "./context/sports_context";
+import { single_sport_url as url } from "./utils/constants";
 import { formatPrice } from "./utils/helpers";
-import { Loading, ProductImages, Stars } from "./components";
-import "./Products-page-global.scss";
+import { Loading, SportImages, Stars } from "./components";
+import "./Sports-page-global.scss";
 import styled from "styled-components";
 
-const SingleProductPage = () => {
+const SingleSportPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const {
-    single_product_loading: loading,
-    single_product_error: error,
-    single_product: product,
-    fetchSingleProduct,
-  } = useProductsContext();
+    single_sport_loading: loading,
+    single_sport_error: error,
+    single_sport: sport,
+    fetchSingleSport,
+  } = useSportsContext();
 
   // Get rid of second id parameter when there is server-side filtering
   useEffect(() => {
-    fetchSingleProduct(`${url}`, `${id}`);
+    fetchSingleSport(`${url}`, `${id}`);
     // eslint-disable-next-line
   }, [id]);
 
@@ -45,15 +45,15 @@ const SingleProductPage = () => {
     id: sku,
     company,
     images,
-  } = product;
+  } = sport;
   return (
     <Wrapper>
       <div className="section section-center page">
-        <Link to={`${process.env.PUBLIC_URL}/products`} className="btn">
-          back to products
+        <Link to={`${process.env.PUBLIC_URL}/sports`} className="btn">
+          back to sports
         </Link>
-        <div className="product-center">
-          <ProductImages images={images} />
+        <div className="sport-center">
+          <SportImages images={images} />
           <section className="content">
             <h2>{name}</h2>
             <Stars stars={stars} reviews={reviews} />
@@ -80,7 +80,7 @@ const SingleProductPage = () => {
 };
 
 const Wrapper = styled.main`
-  .product-center {
+  .sport-center {
     display: grid;
     gap: 4rem;
     margin-top: 2rem;
@@ -103,7 +103,7 @@ const Wrapper = styled.main`
   }
 
   @media (min-width: 992px) {
-    .product-center {
+    .sport-center {
       grid-template-columns: 1fr 1fr;
       align-items: center;
     }
@@ -113,4 +113,4 @@ const Wrapper = styled.main`
   }
 `;
 
-export default SingleProductPage;
+export default SingleSportPage;

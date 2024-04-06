@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const ProductImages = ({ images = [{ url: "" }] }) => {
+const SportImages = ({ images = [{ url: "" }] }) => {
   const [main, setMain] = useState(images[0]);
   return (
     <Wrapper>
@@ -68,4 +68,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default ProductImages;
+export default SportImages;

@@ -13,8 +13,8 @@ export const links = [
   },
   {
     id: 3,
-    text: "products",
-    url: "/products",
+    text: "sports",
+    url: "/sports",
   },
 ];
 
@@ -35,12 +35,12 @@ export const services = [
     id: 3,
     icon: <GiStabbedNote />,
     title: "history",
-    text: "comfy sloth began because we were tired of disposable furniture. So we set out to design products of lasting quality for how people live today. Furniture should be made for the home, not the landfill.",
+    text: "comfy sloth began because we were tired of disposable furniture. So we set out to design sports of lasting quality for how people live today. Furniture should be made for the home, not the landfill.",
   },
 ];
 
-export const products_url =
-  "https://raw.githubusercontent.com/ismailchbiki/data/main/products.json";
+export const sports_url =
+  "https://raw.githubusercontent.com/ismailchbiki/data/main/sports.json";
 
-// export const single_product_url = `https://raw.githubusercontent.com/ismailchbiki/data/main/products_info.json?id=`; // this is for server-side filtering
-export const single_product_url = `https://raw.githubusercontent.com/ismailchbiki/data/main/products_info.json`;
+// export const single_sport_url = `https://raw.githubusercontent.com/ismailchbiki/data/main/sports_info.json?id=`; // this is for server-side filtering
+export const single_sport_url = `https://raw.githubusercontent.com/ismailchbiki/data/main/sports_info.json`;

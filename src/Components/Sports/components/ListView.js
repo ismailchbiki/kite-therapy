@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { formatPrice } from "../utils/helpers";
 import { Link } from "react-router-dom";
-const ListView = ({ products }) => {
+const ListView = ({ sports }) => {
   return (
     <Wrapper>
-      {products.map((product) => {
-        const { id, image, name, price, description } = product;
+      {sports.map((sport) => {
+        const { id, image, name, price, description } = sport;
         return (
           <article key={id}>
             <img src={image} alt={name} />
@@ -15,7 +15,7 @@ const ListView = ({ products }) => {
               <h5 className="price">{formatPrice(price)}</h5>
               <p>{description.substring(0, 150)}...</p>
               <Link
-                to={`${process.env.PUBLIC_URL}/products/${id}`}
+                to={`${process.env.PUBLIC_URL}/sports/${id}`}
                 className="btn"
               >
                 Details

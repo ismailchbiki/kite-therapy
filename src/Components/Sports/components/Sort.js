@@ -4,7 +4,7 @@ import { BsFillGridFill, BsList } from "react-icons/bs";
 import styled from "styled-components";
 const Sort = () => {
   const {
-    filtered_products: products,
+    filtered_sports: sports,
     grid_view,
     setGridView,
     setListView,
@@ -29,7 +29,7 @@ const Sort = () => {
           <BsList />
         </button>
       </div>
-      <p>{products.length} products found</p>
+      <p>{sports.length} sports found</p>
       <hr />
       <form>
         <label htmlFor="sort">sort by</label>

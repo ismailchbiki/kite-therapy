@@ -5,12 +5,12 @@ import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Product = ({ image, name, price, id }) => {
+const Sport = ({ image, name, price, id }) => {
   return (
     <Wrapper>
-      <motion.div whileHover={{ scale: 1.1 }} className="product-container">
+      <motion.div whileHover={{ scale: 1.1 }} className="sport-container">
         <img src={image} alt={name} />
-        <Link to={`${process.env.PUBLIC_URL}/products/${id}`} className="link">
+        <Link to={`${process.env.PUBLIC_URL}/sports/${id}`} className="link">
           <FaSearch />
         </Link>
       </motion.div>
@@ -23,7 +23,7 @@ const Product = ({ image, name, price, id }) => {
 };
 
 const Wrapper = styled.article`
-  .product-container {
+  .sport-container {
     position: relative;
     background: var(--clr-black);
     border-radius: var(--radius);
@@ -55,10 +55,10 @@ const Wrapper = styled.article`
       color: var(--clr-white);
     }
   }
-  .product-container:hover img {
+  .sport-container:hover img {
     opacity: 0.5;
   }
-  .product-container:hover .link {
+  .sport-container:hover .link {
     opacity: 1;
   }
   footer {
@@ -78,4 +78,4 @@ const Wrapper = styled.article`
     letter-spacing: var(--spacing);
   }
 `;
-export default Product;
+export default Sport;

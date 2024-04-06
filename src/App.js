@@ -8,8 +8,8 @@ import { DarkThemeProvider } from "./CustomeHooks/useDarkTheme/useDarkTheme";
 import Navbar from "./Components/Navbar/Index";
 import Index from "./Components/Index/Index";
 import Services from "./Components/Services/Index";
-import Products from "./Components/Products/ProductsPage";
-import SingleProduct from "./Components/Products/SingleProductPage";
+import Sports from "./Components/Sports/SportsPage";
+import SingleSport from "./Components/Sports/SingleSportPage";
 import Portfolio from "./Components/Portfolio/Index";
 import Team from "./Components/Team/Index";
 import Contact from "./Components/Contact/Index";
@@ -29,13 +29,13 @@ function App() {
         <Routes>
           <Route path={`${process.env.PUBLIC_URL}/`} element={<Index />} />
           <Route
-            path={`${process.env.PUBLIC_URL}/products`}
-            element={<Products />}
+            path={`${process.env.PUBLIC_URL}/sports`}
+            element={<Sports />}
           />
 
           <Route
-            path={process.env.PUBLIC_URL + "/products/:id"}
-            element={<SingleProduct />}
+            path={process.env.PUBLIC_URL + "/sports/:id"}
+            element={<SingleSport />}
           />
 
           <Route

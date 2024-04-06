@@ -18,12 +18,12 @@ const Filters = () => {
     },
     updateFilters,
     clearFilters,
-    all_products,
+    all_sports,
   } = useFilterContext();
 
-  const categories = getUniqueValues(all_products, "category");
-  const companies = getUniqueValues(all_products, "company");
-  const colors = getUniqueValues(all_products, "colors");
+  const categories = getUniqueValues(all_sports, "category");
+  const companies = getUniqueValues(all_sports, "company");
+  const colors = getUniqueValues(all_sports, "colors");
 
   return (
     <div className="filter">
