@@ -26,8 +26,8 @@ const SingleSportPage = () => {
   useEffect(() => {
     if (error) {
       setTimeout(() => {
-        navigate(process.env.PUBLIC_URL + "/");
-      }, 3000);
+        navigate(process.env.PUBLIC_URL + "/not-found");
+      }, 100);
     }
     // eslint-disable-next-line
   }, [error]);

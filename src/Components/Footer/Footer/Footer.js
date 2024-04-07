@@ -11,16 +11,19 @@ import "./Footer.scss";
 const FooterFooter = ({ copyRight }) => {
   // Custome Hooks
   const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/`,
+    `${process.env.PUBLIC_URL}/`
   );
 
   // Fetch Logo
   const {
     data: { image = "", text = "" },
-  } = useAxios("./apis/logo.json", []);
+  } = useAxios(`${process.env.PUBLIC_URL}/apis/logo.json`, []);
 
   // Fetch Social
-  const { data: social = [] } = useAxios("./apis/social.json", []);
+  const { data: social = [] } = useAxios(
+    `${process.env.PUBLIC_URL}/apis/social.json`,
+    []
+  );
 
   // Get Social List
   const socialList = social.map((item) => {

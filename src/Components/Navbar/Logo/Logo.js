@@ -11,13 +11,13 @@ import "./Logo.scss";
 const NavbarLogo = () => {
   // Custome Hooks
   const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/`,
+    `${process.env.PUBLIC_URL}/`
   );
 
   // Fetch data
   const {
     data: { image = "", text = "" },
-  } = useAxios("./apis/logo.json", []);
+  } = useAxios(`${process.env.PUBLIC_URL}/apis/logo.json`, []);
 
   return (
     <Link

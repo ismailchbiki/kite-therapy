@@ -18,7 +18,7 @@ const Team = () => {
     success,
     isPending,
     error,
-  } = useAxios("./apis/team.json", []);
+  } = useAxios(`${process.env.PUBLIC_URL}/apis/team.json`, []);
 
   return (
     <section className="team">

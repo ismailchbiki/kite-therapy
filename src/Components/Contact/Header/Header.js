@@ -7,7 +7,10 @@ import "./Header.scss";
 // Contact Header Component
 const ContactHeader = ({ header: { title, body } }) => {
   // Fetch data
-  const { data: social = [] } = useAxios("./apis/social.json", []);
+  const { data: social = [] } = useAxios(
+    `${process.env.PUBLIC_URL}/apis/social.json`,
+    []
+  );
 
   // Get Social Links List
   const socialList = social.map((item) => {

@@ -30,7 +30,7 @@ const Services = () => {
     success,
     isPending,
     error,
-  } = useAxios("./apis/services.json", []);
+  } = useAxios(`${process.env.PUBLIC_URL}/apis/services.json`, []);
 
   return (
     <section
@@ -41,8 +41,8 @@ const Services = () => {
             ? servicesBgDark
             : null
           : success
-            ? servicesBg
-            : null
+          ? servicesBg
+          : null
       }
     >
       {isPending && <Loading />}

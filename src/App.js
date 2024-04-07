@@ -34,7 +34,7 @@ function App() {
           />
 
           <Route
-            path={process.env.PUBLIC_URL + "/sports/:id"}
+            path={`${process.env.PUBLIC_URL}/sports/:id`}
             element={<SingleSport />}
           />
 

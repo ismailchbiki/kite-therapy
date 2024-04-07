@@ -34,7 +34,7 @@ const Portfolio = () => {
     success,
     isPending,
     error,
-  } = useAxios("./apis/portfolio.json", []);
+  } = useAxios(`${process.env.PUBLIC_URL}/apis/portfolio.json`, []);
 
   // Refs
   const projectsContainer = useRef();
@@ -66,8 +66,8 @@ const Portfolio = () => {
             ? PortfolioBgDark
             : null
           : success
-            ? PortfolioBg
-            : null
+          ? PortfolioBg
+          : null
       }
     >
       {isPending && <Loading />}

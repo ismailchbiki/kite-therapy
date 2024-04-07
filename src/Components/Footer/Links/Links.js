@@ -7,7 +7,10 @@ import "./Links.scss";
 // Footer Links Component
 const FooterLinks = ({ content: linksBlocks }) => {
   // Fetch data
-  const { data: social = [] } = useAxios("./apis/social.json", []);
+  const { data: social = [] } = useAxios(
+    `${process.env.PUBLIC_URL}/apis/social.json`,
+    []
+  );
 
   const footerBlocks = [
     ...linksBlocks,

@@ -19,7 +19,7 @@ const Newsletter = () => {
     success,
     isPending,
     error,
-  } = useAxios("./apis/newsletter.json", []);
+  } = useAxios(`${process.env.PUBLIC_URL}/apis/newsletter.json`, []);
 
   return (
     <section className="newsletter">

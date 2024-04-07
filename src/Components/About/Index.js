@@ -20,7 +20,7 @@ const About = () => {
     success,
     isPending,
     error,
-  } = useAxios("./apis/about.json", []);
+  } = useAxios(`${process.env.PUBLIC_URL}/apis/about.json`, []);
 
   return (
     <section className="about">
