@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kite-therapy/static/css/main.ce6d47a6.css",
-    "main.js": "/kite-therapy/static/js/main.a08096db.js",
+    "main.js": "/kite-therapy/static/js/main.71ecdea7.js",
     "static/js/453.e31fc037.chunk.js": "/kite-therapy/static/js/453.e31fc037.chunk.js",
     "index.html": "/kite-therapy/index.html",
     "main.ce6d47a6.css.map": "/kite-therapy/static/css/main.ce6d47a6.css.map",
-    "main.a08096db.js.map": "/kite-therapy/static/js/main.a08096db.js.map",
+    "main.71ecdea7.js.map": "/kite-therapy/static/js/main.71ecdea7.js.map",
     "453.e31fc037.chunk.js.map": "/kite-therapy/static/js/453.e31fc037.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce6d47a6.css",
-    "static/js/main.a08096db.js"
+    "static/js/main.71ecdea7.js"
   ]
 }
