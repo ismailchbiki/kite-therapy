@@ -1,5 +1,7 @@
 import React from "react";
 import { GiCompass, GiDiamondHard, GiStabbedNote } from "react-icons/gi";
+import config from "./config";
+
 export const links = [
   {
     id: 1,
@@ -40,8 +42,7 @@ export const services = [
 ];
 
 // All the sports
-export const sports_url =
-  "https://raw.githubusercontent.com/ismailchbiki/data/main/sports.json";
+export const sports_url = config.sports_url;
 
 // Single sport with info
-export const single_sport_url = `https://raw.githubusercontent.com/ismailchbiki/data/main/sports_info.json`;
+export const single_sport_url = config.single_sport_url;
