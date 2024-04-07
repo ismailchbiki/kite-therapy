@@ -15,7 +15,7 @@ const NavbarList = ({ setNavbarOpen }) => {
   // Fetch data
   const {
     data: { links = [], button = {} },
-  } = useAxios("./apis/navbar.json", []);
+  } = useAxios("/apis/navbar.json", []);
 
   const habdleCLick = (e, link) => {
     preventRouterLinks(e, link);

@@ -26,7 +26,7 @@ const SingleSportPage = () => {
   useEffect(() => {
     if (error) {
       setTimeout(() => {
-        navigate(process.env.PUBLIC_URL + "/");
+        navigate(process.env.PUBLIC_URL + "/sports");
       }, 3000);
     }
     // eslint-disable-next-line

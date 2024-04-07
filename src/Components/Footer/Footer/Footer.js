@@ -11,7 +11,7 @@ import "./Footer.scss";
 const FooterFooter = ({ copyRight }) => {
   // Custome Hooks
   const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/`,
+    `${process.env.PUBLIC_URL}/`
   );
 
   // Fetch Logo
