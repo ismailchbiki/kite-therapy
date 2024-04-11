@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kite-therapy/static/css/main.ce6d47a6.css",
-    "main.js": "/kite-therapy/static/js/main.d326b953.js",
-    "static/js/453.e31fc037.chunk.js": "/kite-therapy/static/js/453.e31fc037.chunk.js",
-    "index.html": "/kite-therapy/index.html",
-    "main.ce6d47a6.css.map": "/kite-therapy/static/css/main.ce6d47a6.css.map",
-    "main.d326b953.js.map": "/kite-therapy/static/js/main.d326b953.js.map",
-    "453.e31fc037.chunk.js.map": "/kite-therapy/static/js/453.e31fc037.chunk.js.map"
+    "main.css": "/kitesurfsource/static/css/main.ce6d47a6.css",
+    "main.js": "/kitesurfsource/static/js/main.71dac70c.js",
+    "static/js/453.df151022.chunk.js": "/kitesurfsource/static/js/453.df151022.chunk.js",
+    "index.html": "/kitesurfsource/index.html",
+    "main.ce6d47a6.css.map": "/kitesurfsource/static/css/main.ce6d47a6.css.map",
+    "main.71dac70c.js.map": "/kitesurfsource/static/js/main.71dac70c.js.map",
+    "453.df151022.chunk.js.map": "/kitesurfsource/static/js/453.df151022.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce6d47a6.css",
-    "static/js/main.d326b953.js"
+    "static/js/main.71dac70c.js"
   ]
 }
