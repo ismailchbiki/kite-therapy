@@ -11,7 +11,7 @@ import "./Footer.scss";
 const FooterFooter = ({ copyRight }) => {
   // Custome Hooks
   const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/`
+    `${process.env.PUBLIC_URL}/`,
   );
 
   // Fetch Logo
@@ -22,7 +22,7 @@ const FooterFooter = ({ copyRight }) => {
   // Fetch Social
   const { data: social = [] } = useAxios(
     `${process.env.PUBLIC_URL}/apis/social.json`,
-    []
+    [],
   );
 
   // Get Social List

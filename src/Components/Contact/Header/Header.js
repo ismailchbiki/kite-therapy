@@ -9,7 +9,7 @@ const ContactHeader = ({ header: { title, body } }) => {
   // Fetch data
   const { data: social = [] } = useAxios(
     `${process.env.PUBLIC_URL}/apis/social.json`,
-    []
+    [],
   );
 
   // Get Social Links List

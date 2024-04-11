@@ -9,7 +9,7 @@ const FooterLinks = ({ content: linksBlocks }) => {
   // Fetch data
   const { data: social = [] } = useAxios(
     `${process.env.PUBLIC_URL}/apis/social.json`,
-    []
+    [],
   );
 
   const footerBlocks = [

@@ -21,7 +21,7 @@ const sports_reducer = (state, action) => {
   }
   if (action.type === GET_SPORTS_SUCCESS) {
     const featured_sports = action.payload.filter(
-      (sport) => sport.featured === true
+      (sport) => sport.featured === true,
     );
     return {
       ...state,

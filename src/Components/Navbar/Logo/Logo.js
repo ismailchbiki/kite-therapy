@@ -11,7 +11,7 @@ import "./Logo.scss";
 const NavbarLogo = () => {
   // Custome Hooks
   const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/`
+    `${process.env.PUBLIC_URL}/`,
   );
 
   // Fetch data

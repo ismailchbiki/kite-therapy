@@ -66,8 +66,8 @@ const Portfolio = () => {
             ? PortfolioBgDark
             : null
           : success
-          ? PortfolioBg
-          : null
+            ? PortfolioBg
+            : null
       }
     >
       {isPending && <Loading />}

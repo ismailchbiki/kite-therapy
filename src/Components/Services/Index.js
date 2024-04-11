@@ -41,8 +41,8 @@ const Services = () => {
             ? servicesBgDark
             : null
           : success
-          ? servicesBg
-          : null
+            ? servicesBg
+            : null
       }
     >
       {isPending && <Loading />}

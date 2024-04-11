@@ -14,7 +14,7 @@ ReactDOM.render(
       </FilterProvider>
     </SportsProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 
 reportWebVitals();
