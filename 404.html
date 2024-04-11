@@ -23,7 +23,7 @@
       // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
       // Otherwise, leave pathSegmentsToKeep as 0.
 
-      var pathSegmentsToKeep = 1; // 0 if you're using a custom domain
+      var pathSegmentsToKeep = 0; // 0 if you're using a custom domain, 1 if not
 
       var l = window.location;
       l.replace(

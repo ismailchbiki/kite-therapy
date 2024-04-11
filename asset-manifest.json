@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kitesurfsource/static/css/main.ce6d47a6.css",
-    "main.js": "/kitesurfsource/static/js/main.71dac70c.js",
-    "static/js/453.df151022.chunk.js": "/kitesurfsource/static/js/453.df151022.chunk.js",
-    "index.html": "/kitesurfsource/index.html",
-    "main.ce6d47a6.css.map": "/kitesurfsource/static/css/main.ce6d47a6.css.map",
-    "main.71dac70c.js.map": "/kitesurfsource/static/js/main.71dac70c.js.map",
-    "453.df151022.chunk.js.map": "/kitesurfsource/static/js/453.df151022.chunk.js.map"
+    "main.css": "/static/css/main.ce6d47a6.css",
+    "main.js": "/static/js/main.d3308086.js",
+    "static/js/453.df151022.chunk.js": "/static/js/453.df151022.chunk.js",
+    "index.html": "/index.html",
+    "main.ce6d47a6.css.map": "/static/css/main.ce6d47a6.css.map",
+    "main.d3308086.js.map": "/static/js/main.d3308086.js.map",
+    "453.df151022.chunk.js.map": "/static/js/453.df151022.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce6d47a6.css",
-    "static/js/main.71dac70c.js"
+    "static/js/main.d3308086.js"
   ]
 }
