@@ -18,8 +18,24 @@ import NotFound from "./Components/NotFound/Index";
 
 // Import App Main Sass File
 import "./App.scss";
+import Construction from "./Construction/Construction";
 
 function App() {
+  if (true) {
+    return (
+      <DarkThemeProvider>
+        <Router>
+          <Routes>
+            <Route
+              path={`${process.env.PUBLIC_URL}/`}
+              element={<Construction />}
+            />
+          </Routes>
+        </Router>
+      </DarkThemeProvider>
+    );
+  }
+
   return (
     <DarkThemeProvider>
       <Router>
@@ -32,12 +48,10 @@ function App() {
             path={`${process.env.PUBLIC_URL}/sports`}
             element={<Sports />}
           />
-
           <Route
             path={`${process.env.PUBLIC_URL}/sports/:id`}
             element={<SingleSport />}
           />
-
           <Route
             path={`${process.env.PUBLIC_URL}/services`}
             element={<Services />}

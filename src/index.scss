@@ -3,7 +3,7 @@
 /***************************************************
 	Colors Set In This File For Two Reasons
 		1 - [ Handle Dark Mode ]
-		2 - [ To Avoid Repeat Code In Diffrent Sass Files When Import Colors Sass File ]
+		2 - [ To Avoid Repeating Code In Different Sass Files When Importing Colors Sass File ]
 ***************************************************/
 
 // Start Main Colors Using Css variables In Light Theme
@@ -14,6 +14,7 @@
   --third-color: #262222;
   --fourth-color: #495254;
   --white-color: #fff;
+  --logo-text-color: #15406b;
 
   --background-color: #fff;
   --upper-background-color: #fff;
@@ -32,6 +33,7 @@
   --third-color: #fff;
   --fourth-color: #fff;
   --white-color: #262222;
+  --logo-text-color: #306396;
 
   --background-color: #121212;
   --upper-background-color: #232323;

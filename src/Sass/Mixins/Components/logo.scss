@@ -6,6 +6,12 @@
 @mixin logo {
   @include reset-link;
   display: flex;
+  align-items: center;
+
+  // Uncomment when deploying under Construction page
+  position: relative;
+  top: 20px;
+  left: 20px;
 }
 
 // Logo Image Mixin
@@ -13,12 +19,14 @@
   display: block;
   position: relative;
   user-select: none;
+  width: 50px;
 }
 
 // Logo Text Mixin
 @mixin logo-text {
   @include first-header;
-  font-size: 2rem;
-  color: $third-color;
+  font-size: 1.6rem;
+  color: $logo-text-color;
   user-select: none;
+  margin-left: 5px;
 }

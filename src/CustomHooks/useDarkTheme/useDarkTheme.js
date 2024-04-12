@@ -48,6 +48,8 @@ export const DarkThemeProvider = ({ children }) => {
 
   // Check Dark theme Status
   useEffect(() => {
+    const logoLink = document.getElementById("logo");
+
     // Trigger Dark theme Depend On Local Storage
     if (localStorage !== null) {
       if (localStorage) {
@@ -60,7 +62,13 @@ export const DarkThemeProvider = ({ children }) => {
     // Trigger Dark theme Depend On User Prefers
     if (localStorage === null) {
       const prefers = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      prefers ? enableDarkTheme() : disableDarkTheme();
+      if (prefers) {
+        enableDarkTheme();
+        logoLink.href = `${process.env.PUBLIC_URL}/Images/Main/logo_dark.png`;
+      } else {
+        disableDarkTheme();
+        logoLink.href = `${process.env.PUBLIC_URL}/Images/Main/logo.png`;
+      }
     }
   }, [enableDarkTheme, disableDarkTheme, localStorage]);
 
