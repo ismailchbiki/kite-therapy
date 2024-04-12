@@ -1,5 +1,5 @@
-// Import Custome Hooks
-import useAxios from "./../../../CustomeHooks/useAxios/useAxios";
+// Import Custom Hooks
+import useAxios from "../../../CustomHooks/useAxios/useAxios";
 
 // Main Footer Links Sass File
 import "./Links.scss";
@@ -9,7 +9,7 @@ const FooterLinks = ({ content: linksBlocks }) => {
   // Fetch data
   const { data: social = [] } = useAxios(
     `${process.env.PUBLIC_URL}/apis/social.json`,
-    [],
+    []
   );
 
   const footerBlocks = [

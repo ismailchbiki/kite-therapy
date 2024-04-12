@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-// Import Custome Hooks
-import { useDarkTheme } from "./../../../CustomeHooks/useDarkTheme/useDarkTheme";
-import useThrottle from "./../../../CustomeHooks/useThrottle/useThrottle";
+// Import Custom Hooks
+import { useDarkTheme } from "../../../CustomHooks/useDarkTheme/useDarkTheme";
+import useThrottle from "../../../CustomHooks/useThrottle/useThrottle";
 
 // Main About Body Sass File
 import "./Body.scss";

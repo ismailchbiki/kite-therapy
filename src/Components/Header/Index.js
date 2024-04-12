@@ -1,9 +1,9 @@
 import { useRef } from "react";
 
-// Import Custome Hooks
-import useAxios from "./../../CustomeHooks/useAxios/useAxios";
-import { useDarkTheme } from "./../../CustomeHooks/useDarkTheme/useDarkTheme";
-import useThrottle from "./../../CustomeHooks/useThrottle/useThrottle";
+// Import Custom Hooks
+import useAxios from "../../CustomHooks/useAxios/useAxios";
+import { useDarkTheme } from "../../CustomHooks/useDarkTheme/useDarkTheme";
+import useThrottle from "../../CustomHooks/useThrottle/useThrottle";
 
 // Import Components
 import Loading from "./../Loading/Index";

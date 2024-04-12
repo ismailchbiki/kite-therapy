@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 
-// Import Custome Hooks
-import useAxios from "./../../../CustomeHooks/useAxios/useAxios";
-import usePreventRouterLinks from "./../../../CustomeHooks/usePreventRouterLinks/usePreventRouterLinks";
+// Import Custom Hooks
+import useAxios from "../../../CustomHooks/useAxios/useAxios";
+import usePreventRouterLinks from "../../../CustomHooks/usePreventRouterLinks/usePreventRouterLinks";
 
 // Main Footer Footer Sass File
 import "./Footer.scss";
 
 // Footer Footer Component
 const FooterFooter = ({ copyRight }) => {
-  // Custome Hooks
+  // Custom Hooks
   const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/`,
+    `${process.env.PUBLIC_URL}/`
   );
 
   // Fetch Logo
@@ -22,7 +22,7 @@ const FooterFooter = ({ copyRight }) => {
   // Fetch Social
   const { data: social = [] } = useAxios(
     `${process.env.PUBLIC_URL}/apis/social.json`,
-    [],
+    []
   );
 
   // Get Social List

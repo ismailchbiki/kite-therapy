@@ -1,6 +1,6 @@
-// Import Custome Hooks
-import useAxios from "./../../CustomeHooks/useAxios/useAxios";
-import { useDarkTheme } from "./../../CustomeHooks/useDarkTheme/useDarkTheme";
+// Import Custom Hooks
+import useAxios from "../../CustomHooks/useAxios/useAxios";
+import { useDarkTheme } from "../../CustomHooks/useDarkTheme/useDarkTheme";
 
 // Import Components
 import ServicesBody from "./Body/Body";
@@ -41,8 +41,8 @@ const Services = () => {
             ? servicesBgDark
             : null
           : success
-            ? servicesBg
-            : null
+          ? servicesBg
+          : null
       }
     >
       {isPending && <Loading />}

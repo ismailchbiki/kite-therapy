@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-// Import Custome Hooks
-import { useDarkTheme } from "./../../../CustomeHooks/useDarkTheme/useDarkTheme";
-import useLocalStorage from "./../../../CustomeHooks/useLocalStorage/useLocalStorage";
-import useThrottle from "./../../../CustomeHooks/useThrottle/useThrottle";
+// Import Custom Hooks
+import { useDarkTheme } from "../../../CustomHooks/useDarkTheme/useDarkTheme";
+import useLocalStorage from "../../../CustomHooks/useLocalStorage/useLocalStorage";
+import useThrottle from "../../../CustomHooks/useThrottle/useThrottle";
 
 // Main Contact Form Sass File
 import "./Form.scss";
@@ -61,7 +61,7 @@ const ContactForm = () => {
         },
         {
           cancelToken: cancelTokenSource.token,
-        },
+        }
       )
       .then(
         (response) => {
@@ -102,7 +102,7 @@ const ContactForm = () => {
               setError(null);
             }, throttleHideMessageTimeout);
           }
-        },
+        }
       );
   }, throttleHideMessageTimeout);
 

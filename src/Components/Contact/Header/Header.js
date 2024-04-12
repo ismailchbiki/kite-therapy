@@ -1,5 +1,5 @@
-// Import Custome Hooks
-import useAxios from "./../../../CustomeHooks/useAxios/useAxios";
+// Import Custom Hooks
+import useAxios from "../../../CustomHooks/useAxios/useAxios";
 
 // Main Contact Header Sass File
 import "./Header.scss";
@@ -9,7 +9,7 @@ const ContactHeader = ({ header: { title, body } }) => {
   // Fetch data
   const { data: social = [] } = useAxios(
     `${process.env.PUBLIC_URL}/apis/social.json`,
-    [],
+    []
   );
 
   // Get Social Links List

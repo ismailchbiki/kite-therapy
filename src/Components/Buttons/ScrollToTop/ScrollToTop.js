@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-// Import Custome Hooks
-import useThrottle from "./../../../CustomeHooks/useThrottle/useThrottle";
+// Import Custom Hooks
+import useThrottle from "../../../CustomHooks/useThrottle/useThrottle";
 
 // Main Scroll To Top Button Sass File
 import "./ScrollToTop.scss";

@@ -1,10 +1,10 @@
 /*
-	This Custome Hook Useing For Prevent React Router To Reload The Same Component When User Is Already In The Page
+	This Custom Hook Useing For Prevent React Router To Reload The Same Component When User Is Already In The Page
 */
 
 import { useLocation } from "react-router-dom";
 
-// Send Path To Custome Hook When The Link Is Static
+// Send Path To Custom Hook When The Link Is Static
 const usePreventRouterLinks = (path) => {
   // This Variable Use For Links With Single Status Like Services & Portfolio
   const isPathMatched = useLocation().pathname === path;

@@ -1,15 +1,15 @@
 import { NavLink, Link } from "react-router-dom";
 
-// Import Custome Hooks
-import useAxios from "./../../../CustomeHooks/useAxios/useAxios";
-import usePreventRouterLinks from "./../../../CustomeHooks/usePreventRouterLinks/usePreventRouterLinks";
+// Import Custom Hooks
+import useAxios from "../../../CustomHooks/useAxios/useAxios";
+import usePreventRouterLinks from "../../../CustomHooks/usePreventRouterLinks/usePreventRouterLinks";
 
 // Main Navbar List Sass File
 import "./List.scss";
 
 // Navbar List Component
 const NavbarList = ({ setNavbarOpen }) => {
-  // Custome Hooks
+  // Custom Hooks
   const { preventRouterLinks } = usePreventRouterLinks();
 
   // Fetch data

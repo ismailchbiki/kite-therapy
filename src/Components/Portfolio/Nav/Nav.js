@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 
-// Import Custome Hooks
-import useDebounce from "./../../../CustomeHooks/useDebounce/useDebounce";
-import useThrottle from "./../../../CustomeHooks/useThrottle/useThrottle";
+// Import Custom Hooks
+import useDebounce from "../../../CustomHooks/useDebounce/useDebounce";
+import useThrottle from "../../../CustomHooks/useThrottle/useThrottle";
 
 // Main Portfolio Nav Sass File
 import "./Nav.scss";
 
 // Portfolio Nav Component
 const PortfolioNav = ({ nav, type, changeType }) => {
-  // Custome Hooks
+  // Custom Hooks
   const { debounce } = useDebounce();
   const { throttle } = useThrottle();
 
@@ -35,14 +35,14 @@ const PortfolioNav = ({ nav, type, changeType }) => {
 
       changeType(target.textContent);
     },
-    [changeType],
+    [changeType]
   );
 
   // Handle Selected Item
   useEffect(() => {
     const debounceHandleLine = debounce(
       () => handleLine(activeItem, selected.current),
-      200,
+      200
     );
 
     if (selected.current) {

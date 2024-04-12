@@ -1,5 +1,5 @@
-// Import Custome Hooks
-import useAxios from "./../../CustomeHooks/useAxios/useAxios";
+// Import Custom Hooks
+import useAxios from "../../CustomHooks/useAxios/useAxios";
 
 // Import Components
 import ContactForm from "./Form/Form";

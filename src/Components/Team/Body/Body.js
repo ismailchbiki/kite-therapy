@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper/core";
 
-// Import Custome Hooks
-import usePreventRouterLinks from "./../../../CustomeHooks/usePreventRouterLinks/usePreventRouterLinks";
+// Import Custom Hooks
+import usePreventRouterLinks from "../../../CustomHooks/usePreventRouterLinks/usePreventRouterLinks";
 
 // Import Swiper styles
 import "swiper/swiper.scss";
@@ -18,9 +18,9 @@ import "./Body.scss";
 SwiperCore.use([Navigation, Autoplay]);
 
 const TeamBody = ({ content: members }) => {
-  // Custome Hooks
+  // Custom Hooks
   const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/team`,
+    `${process.env.PUBLIC_URL}/team`
   );
 
   const membersList = members.map((member) => {

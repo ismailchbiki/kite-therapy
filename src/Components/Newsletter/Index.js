@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-// Import Custome Hooks
-import useAxios from "./../../CustomeHooks/useAxios/useAxios";
+// Import Custom Hooks
+import useAxios from "../../CustomHooks/useAxios/useAxios";
 
 // Import Component
 import Loading from "./../Loading/Index";

@@ -6,7 +6,7 @@ import {
   useEffect,
 } from "react";
 
-// Import Custome Hooks
+// Import Custom Hooks
 import useLocalStorage from "../useLocalStorage/useLocalStorage";
 
 // Context
@@ -15,7 +15,7 @@ const toggleDarkThemeContext = createContext();
 const EnableDarkThemeContext = createContext();
 const DisableDarkThemeContext = createContext();
 
-// Custome Hooks
+// Custom Hooks
 export const useDarkTheme = () => useContext(DarkThemeContext);
 export const useToggleDarkTheme = () => useContext(toggleDarkThemeContext);
 export const useEnableDarkTheme = () => useContext(EnableDarkThemeContext);

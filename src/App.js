@@ -1,8 +1,8 @@
 // import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-// Import Custome Hooks
-import { DarkThemeProvider } from "./CustomeHooks/useDarkTheme/useDarkTheme";
+// Import Custom Hooks
+import { DarkThemeProvider } from "./CustomHooks/useDarkTheme/useDarkTheme";
 
 // Import Components
 import Navbar from "./Components/Navbar/Index";

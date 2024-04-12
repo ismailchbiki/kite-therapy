@@ -1,19 +1,19 @@
 import { useState, Fragment } from "react";
 import { Link } from "react-router-dom";
 
-// Import Custome Hooks
-import useThrottle from "./../../../CustomeHooks/useThrottle/useThrottle";
-import usePreventRouterLinks from "./../../../CustomeHooks/usePreventRouterLinks/usePreventRouterLinks";
+// Import Custom Hooks
+import useThrottle from "../../../CustomHooks/useThrottle/useThrottle";
+import usePreventRouterLinks from "../../../CustomHooks/usePreventRouterLinks/usePreventRouterLinks";
 
 // Main Portfolio Projects Sass File
 import "./Projects.scss";
 
 // Portfolio Projects Component
 const PortfolioProjects = ({ projects, type, projectsContainer }) => {
-  // Custome Hooks
+  // Custom Hooks
   const { throttle } = useThrottle();
   const { preventRouterLinks, isPathMatched } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/portfolio`,
+    `${process.env.PUBLIC_URL}/portfolio`
   );
 
   // Default Number Of Projects

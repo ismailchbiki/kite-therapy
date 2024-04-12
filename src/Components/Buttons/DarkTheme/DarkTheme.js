@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import {
   useDarkTheme,
   useToggleDarkTheme,
-} from "../../../CustomeHooks/useDarkTheme/useDarkTheme";
-import useThrottle from "./../../../CustomeHooks/useThrottle/useThrottle";
+} from "../../../CustomHooks/useDarkTheme/useDarkTheme";
+import useThrottle from "../../../CustomHooks/useThrottle/useThrottle";
 
 // Main Dark Theme Sass File
 import "./DarkTheme.scss";

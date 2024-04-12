@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 
-// Import Custome Hooks
-import { useDarkTheme } from "./../../../CustomeHooks/useDarkTheme/useDarkTheme";
-import usePreventRouterLinks from "./../../../CustomeHooks/usePreventRouterLinks/usePreventRouterLinks";
+// Import Custom Hooks
+import { useDarkTheme } from "../../../CustomHooks/useDarkTheme/useDarkTheme";
+import usePreventRouterLinks from "../../../CustomHooks/usePreventRouterLinks/usePreventRouterLinks";
 
 // Main Services Container Sass File
 import "./Body.scss";
 
 // Services Container Component
 const ServicesBody = ({ content }) => {
-  // Custome Hooks
+  // Custom Hooks
   const darkTheme = useDarkTheme();
   const { preventRouterLinks } = usePreventRouterLinks(
-    `${process.env.PUBLIC_URL}/services`,
+    `${process.env.PUBLIC_URL}/services`
   );
 
   // Get Services List

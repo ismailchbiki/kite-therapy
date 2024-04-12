@@ -83,7 +83,7 @@
 ---- [ Done ] Fix Width Problem In Team Member In Extra Small Screens
 ---- [ Done ] Create Logo Json File
 ---- [ Done ] Mixin Logo Style
----- [ Done ] Separete Mixins File In Small FIles
+---- [ Done ] Separate Mixins File In Small FIles
 ---- [ Done ] Remove Height & background From Body
 ---- [ Done ] Create Social Json FIle
 ---- [ Done ] Make Header Dynamic
@@ -91,49 +91,49 @@
 ---- [ Done ] Change Navbar Shadow
 ---- [ Done ] Scroll To Top Button
 ---- [ Done ] Contact Background Need Resize [ Increase Padding ]
----- [ Done ] Fix Some Accessiblity Problems
+---- [ Done ] Fix Some Accessibility Problems
 ---- [ Done ] Fix Scroll To TOp Button Errors
 ---- [ Done ] Fix Link Problem In [ Services - Portfolio - Team ] Sections
 ---- [ Done ] Fix Unmounted Component To Avoid Lake Memory
 ---- [ Done ] Destructuring Small Props
 ---- [ Done ] Error In Console When Change Page
----- [ Done ] Change Some Settings To Change Start Create Controll Room For Colors
+---- [ Done ] Change Some Settings To Change Start Create Control Room For Colors
 ---- [ Done ] TypeError: Cannot read property 'textContent' of null Portfolio Nav Section
 					---- [ Appear When Resize Page After Change Page ]
 ---- [ Done ] TypeError: Cannot read property 'classList' of null
 					---- [ Appear When Resize Page After Change Page ]
----- [ Done ] Increas Gap Between About Text & Image
+---- [ Done ] Increase Gap Between About Text & Image
 ---- [ Done ] Create Option Buttons Component To Collect All Options Component In The Same Place
----- [ Done ] Create Local Storage Custome Hook
+---- [ Done ] Create Local Storage Custom Hook
 ---- [ Done ] Add Dark theme
 ---- [ Done ] Create Dark theme Hook & Add Local Storage In App Component
----- [ Done ] Check User Preformance & Enable Dark theme
+---- [ Done ] Check User Performance & Enable Dark theme
 ---- [ Done ] Handle Images In Dark theme
 ---- [ Done ] Dark theme Btn Break When CLick A Lot
 ---- [ Done ] Use useContext To Apply Dark theme On Images & Button Icon
----- [ Done ] Create Custome Hook useAxios
----- [ Done ] Use useLayoutEffect Insted Of useEffect In Portfolio To Avoid Errors [ Not Working ]
----- [ Done ] Maintance Some Code In Portfolio
+---- [ Done ] Create Custom Hook useAxios
+---- [ Done ] Use useLayoutEffect Instead Of useEffect In Portfolio To Avoid Errors [ Not Working ]
+---- [ Done ] Maintenance Some Code In Portfolio
 ---- [ Done ] Change Class Name Or Animate Dark theme Btn From [ rotate ] To [ animate ]
 ---- [ Done ] Portfolio Error [ Fix Resize Problem & Remove Resize Function When Unmount Component ]
----- [ Done ] Create Newslatter Api
----- [ Done ] Change Dark Mode To Dark Theme & Custome Hook File Name
+---- [ Done ] Create Newsletter Api
+---- [ Done ] Change Dark Mode To Dark Theme & Custom Hook File Name
 ---- [ Done ] Change Svg Images Colors In Dark theme
----- [ Done ] Think About Change Portfolio Forground Color
+---- [ Done ] Think About Change Portfolio Foreground Color
 ---- [ Done ] Shadow Color [ Problem With Sass Should Use Sass Variable ]
 ---- [ Done ] Some Ui Changes
----- [ Done ] Accessiblity ( 97% )
+---- [ Done ] Accessibility ( 97% )
 ---- [ Done ] Change Sass variables Syntax
 ---- [ Done ] Split variables Sass File In Small Files
----- [ Done ] Cut Css Colors variables To Index.scss To Avoid Repeat Code In Diffrent Sass Files When Import Colors Sass File
----- [ Done ] Create useDebounce Custome Hook
----- [ DOne ] Create useThrottle Custome Hook
+---- [ Done ] Cut Css Colors variables To Index.scss To Avoid Repeat Code In Different Sass Files When Import Colors Sass File
+---- [ Done ] Create useDebounce Custom Hook
+---- [ DOne ] Create useThrottle Custom Hook
 ---- [ Done ] Change Upper Background Color Variable Sass Syntax
 ---- [ Done ] Split Sass Mixins To Small Files
 ---- [ Done ] Create White Color Variable
 ---- [ Done ] Change Selection Color
----- [ Done ] Make Add Parameters To Mixins Insted Of Override Proberty
----- [ Done ] Imporve Fetch Data By Using Catch Error & Pending
+---- [ Done ] Make Add Parameters To Mixins Instead Of Override Property
+---- [ Done ] Improve Fetch Data By Using Catch Error & Pending
 ---- [ Done ] Make Loading For Fetching Data
 ---- [ Done ] Create Loading Component
 ---- [ Done ] Create Error Component
@@ -146,7 +146,7 @@
 
 -------------------- Important Notes --------------------
 ---- [ Done ] Add useThrottle For Option Buttons
----- [ Done ] Check All Components For Preformance Problems
+---- [ Done ] Check All Components For Performance Problems
 				---- [ Done ] Navbar
 				---- [ Done ] Header
 				---- [ Done ] Services

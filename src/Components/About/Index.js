@@ -1,7 +1,7 @@
 import React from "react";
 
-// Import Custome Hooks
-import useAxios from "./../../CustomeHooks/useAxios/useAxios";
+// Import Custom Hooks
+import useAxios from "../../CustomHooks/useAxios/useAxios";
 
 // Import Components
 import AboutHeader from "./Header/Header";

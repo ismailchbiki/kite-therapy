@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 
-// Import Custome Hooks
-import useAxios from "./../../CustomeHooks/useAxios/useAxios";
-import { useDarkTheme } from "./../../CustomeHooks/useDarkTheme/useDarkTheme";
+// Import Custom Hooks
+import useAxios from "../../CustomHooks/useAxios/useAxios";
+import { useDarkTheme } from "../../CustomHooks/useDarkTheme/useDarkTheme";
 
 // Import Components
 import PortfolioProjects from "./Projects/Projects";
@@ -25,7 +25,7 @@ const PortfolioBgDark = {
 
 // Main Portfolio Component
 const Portfolio = () => {
-  // Custome Hooks
+  // Custom Hooks
   const darkTheme = useDarkTheme();
 
   // Fetch data
@@ -66,8 +66,8 @@ const Portfolio = () => {
             ? PortfolioBgDark
             : null
           : success
-            ? PortfolioBg
-            : null
+          ? PortfolioBg
+          : null
       }
     >
       {isPending && <Loading />}
