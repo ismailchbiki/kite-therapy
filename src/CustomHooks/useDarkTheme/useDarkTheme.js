@@ -64,10 +64,10 @@ export const DarkThemeProvider = ({ children }) => {
       const prefers = window.matchMedia("(prefers-color-scheme: dark)").matches;
       if (prefers) {
         enableDarkTheme();
-        logoLink.href = `${process.env.PUBLIC_URL}/Images/Main/logo_dark.png`;
+        logoLink.href = `${process.env.PUBLIC_URL}/images/Main/logo_dark.png`;
       } else {
         disableDarkTheme();
-        logoLink.href = `${process.env.PUBLIC_URL}/Images/Main/logo.png`;
+        logoLink.href = `${process.env.PUBLIC_URL}/images/Main/logo.png`;
       }
     }
   }, [enableDarkTheme, disableDarkTheme, localStorage]);
